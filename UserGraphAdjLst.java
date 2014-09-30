@@ -168,7 +168,8 @@ public class UserGraphAdjLst {
 	 * so are all of his/her students), then launching a limited infection from
 	 * that teacher would not do anything. Also will pick a backup teacher who
 	 * has no infected students and is not infected his/herself.
-	 * @return The ideal teacher (or a not-very-random second choice).
+	 * @return The ideal teacher (or a not-very-random second choice). Or null
+	 * if every user has been infected.
 	 */
 	public Person pickBestTeacher() {
 		Person bestTeacher = null;
